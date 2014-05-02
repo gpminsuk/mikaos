@@ -1,0 +1,1333 @@
+00000000000i[     ] Bochs x86 Emulator 2.6.2
+00000000000i[     ]   Built from SVN snapshot on May 26, 2013
+00000000000i[     ] Compiled on May 26 2013 at 10:10:55
+00000000000i[     ] System configuration
+00000000000i[     ]   processors: 1 (cores=1, HT threads=1)
+00000000000i[     ]   A20 line support: yes
+00000000000i[     ] IPS is set to 4000000
+00000000000i[     ] CPU configuration
+00000000000i[     ]   SMP support: no
+00000000000i[     ]   level: 6
+00000000000i[     ]   APIC support: xapic
+00000000000i[     ]   FPU support: yes
+00000000000i[     ]   MMX support: yes
+00000000000i[     ]   3dnow! support: no
+00000000000i[     ]   SEP support: yes
+00000000000i[     ]   SSE support: sse2
+00000000000i[     ]   XSAVE support: no 
+00000000000i[     ]   AES support: no
+00000000000i[     ]   MOVBE support: no
+00000000000i[     ]   ADX support: no
+00000000000i[     ]   x86-64 support: yes
+00000000000i[     ]   1G paging support: no
+00000000000i[     ]   MWAIT support: yes
+00000000000i[     ]   VMX support: 1
+00000000000i[     ] Optimization configuration
+00000000000i[     ]   RepeatSpeedups support: yes
+00000000000i[     ]   Fast function calls: yes
+00000000000i[     ]   Handlers Chaining speedups: yes
+00000000000i[     ] Devices configuration
+00000000000i[     ]   NE2000 support: yes
+00000000000i[     ]   PCI support: yes, enabled=yes
+00000000000i[     ]   SB16 support: yes
+00000000000i[     ]   USB support: yes
+00000000000i[     ]   VGA extension support: vbe cirrus voodoo
+00000000000i[MEM0 ] allocated memory at 111E2020. after alignment, vector=111E3000
+00000000000i[MEM0 ] 32.00MB
+00000000000i[MEM0 ] mem block size = 0x00100000, blocks=32
+00000000000i[MEM0 ] rom at 0xfffe0000/131072 ('C:\Program Files (x86)\Bochs-2.6.2/BIOS-bochs-latest')
+00000000000i[     ] init_dev of 'pci' plugin device by virtual method
+00000000000i[DEV  ] i440FX PMC present at device 0, function 0
+00000000000i[     ] init_dev of 'pci2isa' plugin device by virtual method
+00000000000i[DEV  ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
+00000000000i[     ] init_dev of 'cmos' plugin device by virtual method
+00000000000i[CMOS ] Using local time for initial clock
+00000000000i[CMOS ] Setting initial clock to: Thu May 01 16:07:22 2014 (time0=1398985642)
+00000000000i[     ] init_dev of 'dma' plugin device by virtual method
+00000000000i[DMA  ] channel 4 used by cascade
+00000000000i[     ] init_dev of 'pic' plugin device by virtual method
+00000000000i[     ] init_dev of 'pit' plugin device by virtual method
+00000000000i[     ] init_dev of 'floppy' plugin device by virtual method
+00000000000i[DMA  ] channel 2 used by Floppy Drive
+00000000000i[FDD  ] fd0: '.\f.img' ro=0, h=2,t=80,spt=18
+00000000000i[     ] init_dev of 'vga' plugin device by virtual method
+00000000000i[MEM0 ] Register memory access handlers: 0x0000000a0000 - 0x0000000bffff
+00000000000i[VGA  ] interval=200000
+00000000000i[MEM0 ] Register memory access handlers: 0x0000e0000000 - 0x0000e0ffffff
+00000000000i[BXVGA] VBE Bochs Display Extension Enabled
+00000000000i[WGUI ] Desktop Window dimensions: 1920 x 1200
+00000000000i[WGUI ] Number of Mouse Buttons = 5
+00000000000i[WGUI ] IME disabled
+00000000000i[MEM0 ] rom at 0xc0000/41472 ('C:\Program Files (x86)\Bochs-2.6.2/VGABIOS-lgpl-latest')
+00000000000i[     ] init_dev of 'acpi' plugin device by virtual method
+00000000000i[DEV  ] ACPI Controller present at device 1, function 3
+00000000000i[     ] init_dev of 'ioapic' plugin device by virtual method
+00000000000i[IOAP ] initializing I/O APIC
+00000000000i[MEM0 ] Register memory access handlers: 0x0000fec00000 - 0x0000fec00fff
+00000000000i[IOAP ] IOAPIC enabled (base address = 0xfec00000)
+00000000000i[     ] init_dev of 'keyboard' plugin device by virtual method
+00000000000i[KBD  ] will paste characters every 400 keyboard ticks
+00000000000i[     ] init_dev of 'harddrv' plugin device by virtual method
+00000000000i[HD   ] Using boot sequence floppy, none, none
+00000000000i[HD   ] Floppy boot signature check is enabled
+00000000000i[     ] init_dev of 'pci_ide' plugin device by virtual method
+00000000000i[DEV  ] PIIX3 PCI IDE controller present at device 1, function 1
+00000000000i[     ] init_dev of 'unmapped' plugin device by virtual method
+00000000000i[     ] init_dev of 'biosdev' plugin device by virtual method
+00000000000i[     ] init_dev of 'speaker' plugin device by virtual method
+00000000000i[     ] init_dev of 'extfpuirq' plugin device by virtual method
+00000000000i[     ] init_dev of 'parallel' plugin device by virtual method
+00000000000i[PAR  ] parallel port 1 at 0x0378 irq 7
+00000000000i[     ] init_dev of 'serial' plugin device by virtual method
+00000000000i[SER  ] com1 at 0x03f8 irq 4
+00000000000i[     ] init_dev of 'gameport' plugin device by virtual method
+00000000000i[     ] init_dev of 'usb_uhci' plugin device by virtual method
+00000000000i[DEV  ] Experimental USB UHCI present at device 1, function 2
+00000000000i[UHCI ] USB UHCI initialized
+00000000000i[     ] register state of 'pci' plugin device by virtual method
+00000000000i[     ] register state of 'pci2isa' plugin device by virtual method
+00000000000i[     ] register state of 'cmos' plugin device by virtual method
+00000000000i[     ] register state of 'dma' plugin device by virtual method
+00000000000i[     ] register state of 'pic' plugin device by virtual method
+00000000000i[     ] register state of 'pit' plugin device by virtual method
+00000000000i[     ] register state of 'floppy' plugin device by virtual method
+00000000000i[     ] register state of 'vga' plugin device by virtual method
+00000000000i[     ] register state of 'unmapped' plugin device by virtual method
+00000000000i[     ] register state of 'biosdev' plugin device by virtual method
+00000000000i[     ] register state of 'speaker' plugin device by virtual method
+00000000000i[     ] register state of 'extfpuirq' plugin device by virtual method
+00000000000i[     ] register state of 'parallel' plugin device by virtual method
+00000000000i[     ] register state of 'serial' plugin device by virtual method
+00000000000i[     ] register state of 'gameport' plugin device by virtual method
+00000000000i[     ] register state of 'usb_uhci' plugin device by virtual method
+00000000000i[     ] register state of 'acpi' plugin device by virtual method
+00000000000i[     ] register state of 'ioapic' plugin device by virtual method
+00000000000i[     ] register state of 'keyboard' plugin device by virtual method
+00000000000i[     ] register state of 'harddrv' plugin device by virtual method
+00000000000i[     ] register state of 'pci_ide' plugin device by virtual method
+00000000000i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00000000000i[CPU0 ] cpu hardware reset
+00000000000i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x0000fee00000
+00000000000i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00000000000i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00002028 1fcbfbff
+00000000000i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00000000000i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00000000000i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00000000000i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00000000000i[CPU0 ] CPUID[0x80000000]: 80000008 00000000 00000000 00000000
+00000000000i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000101 2a100000
+00000000000i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00000000000i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00000000000i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00000000000i[CPU0 ] CPUID[0x80000005]: 01ff01ff 01ff01ff 40020140 40020140
+00000000000i[CPU0 ] CPUID[0x80000006]: 00000000 42004200 02008140 00000000
+00000000000i[CPU0 ] CPUID[0x80000007]: 00000000 00000000 00000000 00000000
+00000000000i[CPU0 ] CPUID[0x80000008]: 00003028 00000000 00000000 00000000
+00000000000i[     ] reset of 'pci' plugin device by virtual method
+00000000000i[     ] reset of 'pci2isa' plugin device by virtual method
+00000000000i[     ] reset of 'cmos' plugin device by virtual method
+00000000000i[     ] reset of 'dma' plugin device by virtual method
+00000000000i[     ] reset of 'pic' plugin device by virtual method
+00000000000i[     ] reset of 'pit' plugin device by virtual method
+00000000000i[     ] reset of 'floppy' plugin device by virtual method
+00000000000i[     ] reset of 'vga' plugin device by virtual method
+00000000000i[     ] reset of 'acpi' plugin device by virtual method
+00000000000i[     ] reset of 'ioapic' plugin device by virtual method
+00000000000i[     ] reset of 'keyboard' plugin device by virtual method
+00000000000i[     ] reset of 'harddrv' plugin device by virtual method
+00000000000i[     ] reset of 'pci_ide' plugin device by virtual method
+00000000000i[     ] reset of 'unmapped' plugin device by virtual method
+00000000000i[     ] reset of 'biosdev' plugin device by virtual method
+00000000000i[     ] reset of 'speaker' plugin device by virtual method
+00000000000i[SPEAK] Using system beep for output
+00000000000i[     ] reset of 'extfpuirq' plugin device by virtual method
+00000000000i[     ] reset of 'parallel' plugin device by virtual method
+00000000000i[     ] reset of 'serial' plugin device by virtual method
+00000000000i[     ] reset of 'gameport' plugin device by virtual method
+00000000000i[     ] reset of 'usb_uhci' plugin device by virtual method
+00000000019i[MEM0 ] allocate_block: block=0x0 used 0x1 of 0x20
+00000004655i[BIOS ] $Revision: 11545 $ $Date: 2012-11-11 09:11:17 +0100 (So, 11. Nov 2012) $
+00000318061i[KBD  ] reset-disable command received
+00000320697i[BIOS ] Starting rombios32
+00000321138i[BIOS ] Shutdown flag 0
+00000321709i[BIOS ] ram_size=0x02000000
+00000322172i[BIOS ] ram_end=32MB
+00000800000i[WGUI ] dimension update x=720 y=400 fontheight=16 fontwidth=9 bpp=8
+00001250335i[BIOS ] Found 1 cpu(s)
+00001264354i[BIOS ] bios_table_addr: 0x000fa448 end=0x000fcc00
+00001592004i[PCI  ] i440FX PMC write to PAM register 59 (TLB Flush)
+00001920316i[P2I  ] PCI IRQ routing: PIRQA# set to 0x0b
+00001920341i[P2I  ] PCI IRQ routing: PIRQB# set to 0x09
+00001920341i[P2I  ] PCI IRQ routing: PIRQC# set to 0x0b
+00001920341i[P2I  ] PCI IRQ routing: PIRQD# set to 0x09
+00001920341i[P2I  ] write: ELCR2 = 0x0a
+00001921006i[BIOS ] PIIX3/PIIX4 init: elcr=00 0a
+00001928465i[BIOS ] PCI: bus=0 devfn=0x00: vendor_id=0x8086 device_id=0x1237 class=0x0600
+00001931004i[BIOS ] PCI: bus=0 devfn=0x08: vendor_id=0x8086 device_id=0x7000 class=0x0601
+00001933005i[BIOS ] PCI: bus=0 devfn=0x09: vendor_id=0x8086 device_id=0x7010 class=0x0101
+00001933463i[PIDE ] new BM-DMA address: 0xc000
+00001934001i[BIOS ] region 4: 0x0000c000
+00001936003i[BIOS ] PCI: bus=0 devfn=0x0a: vendor_id=0x8086 device_id=0x7020 class=0x0c03
+00001936286i[UHCI ] new base address: 0xc020
+00001936807i[BIOS ] region 4: 0x0000c020
+00001937012i[UHCI ] new irq line = 9
+00001938524i[BIOS ] PCI: bus=0 devfn=0x0b: vendor_id=0x8086 device_id=0x7113 class=0x0680
+00001939001i[ACPI ] new irq line = 11
+00001939181i[ACPI ] new irq line = 9
+00001939202i[ACPI ] new PM base address: 0xb000
+00001939202i[ACPI ] new SM base address: 0xb100
+00001939234i[PCI  ] setting SMRAM control register to 0x4a
+00002103352i[CPU0 ] Enter to System Management Mode
+00002103352i[CPU0 ] enter_system_management_mode: temporary disable VMX while in SMM mode
+00002103356i[CPU0 ] RSM: Resuming from System Management Mode
+00002267375i[PCI  ] setting SMRAM control register to 0x0a
+00002282000i[BIOS ] MP table addr=0x000fa520 MPC table addr=0x000fa450 size=0xc8
+00002284002i[BIOS ] SMBIOS table addr=0x000fa530
+00002284114i[MEM0 ] allocate_block: block=0x1f used 0x2 of 0x20
+00002286005i[BIOS ] ACPI tables: RSDP addr=0x000fa650 ACPI DATA addr=0x01ff0000 size=0xf72
+00002289263i[BIOS ] Firmware waking vector 0x1ff00cc
+00002291241i[PCI  ] i440FX PMC write to PAM register 59 (TLB Flush)
+00002291795i[BIOS ] bios_table_cur_addr: 0x000fa674
+00002419599i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00002419669i[BXVGA] VBE known Display Interface b0c0
+00002419701i[BXVGA] VBE known Display Interface b0c5
+00002422627i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00014919114i[BIOS ] Booting from 0000:7c00
+00018582006i[FDD  ] controller reset in software
+00019804581i[FDD  ] controller reset in software
+00021000288i[FDD  ] controller reset in software
+00022246369i[FDD  ] controller reset in software
+00023492058i[FDD  ] controller reset in software
+00024736736i[FDD  ] controller reset in software
+00025981228i[FDD  ] controller reset in software
+00027225726i[FDD  ] controller reset in software
+00028470218i[FDD  ] controller reset in software
+00029714715i[FDD  ] controller reset in software
+00030959208i[FDD  ] controller reset in software
+00032331705i[FDD  ] controller reset in software
+00033704198i[FDD  ] controller reset in software
+00035076696i[FDD  ] controller reset in software
+00036449186i[FDD  ] controller reset in software
+00037821683i[FDD  ] controller reset in software
+00039194176i[FDD  ] controller reset in software
+00040566674i[FDD  ] controller reset in software
+00041939164i[FDD  ] controller reset in software
+00043311661i[FDD  ] controller reset in software
+00044684154i[FDD  ] controller reset in software
+00046056652i[FDD  ] controller reset in software
+00047429142i[FDD  ] controller reset in software
+00048801639i[FDD  ] controller reset in software
+00050174646i[FDD  ] controller reset in software
+00051547144i[FDD  ] controller reset in software
+00052919634i[FDD  ] controller reset in software
+00054292645i[FDD  ] controller reset in software
+00055665138i[FDD  ] controller reset in software
+00057038150i[FDD  ] controller reset in software
+00058410640i[FDD  ] controller reset in software
+00059783651i[FDD  ] controller reset in software
+00061156144i[FDD  ] controller reset in software
+00062529173i[FDD  ] controller reset in software
+00063902177i[FDD  ] controller reset in software
+00065275188i[FDD  ] controller reset in software
+00066795354e[CPU0 ] interrupt(long mode): not accessible or not code segment
+00066795354e[CPU0 ] interrupt(long mode): not accessible or not code segment
+00066795354i[CPU0 ] CPU is in long mode (active)
+00066795354i[CPU0 ] CS.mode = 64 bit
+00066795354i[CPU0 ] SS.mode = 64 bit
+00066795354i[CPU0 ] EFER   = 0x00000500
+00066795354i[CPU0 ] | RAX=00000000000319a0  RBX=00000000e0000011
+00066795354i[CPU0 ] | RCX=000000000002273d  RDX=00000000000319a0
+00066795354i[CPU0 ] | RSP=0000000000028480  RBP=0000000000031908
+00066795354i[CPU0 ] | RSI=00000000000e0066  RDI=0000000000001000
+00066795354i[CPU0 ] |  R8=0000000000000000   R9=0000000000033f10
+00066795354i[CPU0 ] | R10=0000000000000000  R11=0000000000000000
+00066795354i[CPU0 ] | R12=0000000000000000  R13=0000000000000000
+00066795354i[CPU0 ] | R14=0000000000000000  R15=0000000000000000
+00066795354i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af pf cf
+00066795354i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00066795354i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 00000000 0 0
+00066795354i[CPU0 ] |  DS:0000( 0000| 0|  0) 00000000 00000000 0 0
+00066795354i[CPU0 ] |  SS:0010( 0002| 0|  0) 00000000 00000000 0 0
+00066795354i[CPU0 ] |  ES:0000( 0000| 0|  0) 00000000 00000000 0 0
+00066795354i[CPU0 ] |  FS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
+00066795354i[CPU0 ] |  GS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
+00066795354i[CPU0 ] |  MSR_FS_BASE:0000000000000000
+00066795354i[CPU0 ] |  MSR_GS_BASE:0000000000000000
+00066795354i[CPU0 ] | RIP=000000006d74329c (000000006d74329c)
+00066795354i[CPU0 ] | CR0=0xe0000011 CR2=0x000000006d74329c
+00066795354i[CPU0 ] | CR3=0x00001000 CR4=0x000000a0
+00066795354i[CPU0 ] 0x000000006d74329c: (instruction unavailable) page not present
+00066795354e[CPU0 ] exception(): 3rd (13) exception with no resolution, shutdown status is 00h, resetting
+00066795354i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00066795354i[CPU0 ] cpu hardware reset
+00066795354i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x0000fee00000
+00066795354i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00066795354i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00002028 1fcbfbff
+00066795354i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00066795354i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00066795354i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00066795354i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00066795354i[CPU0 ] CPUID[0x80000000]: 80000008 00000000 00000000 00000000
+00066795354i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000101 2a100000
+00066795354i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00066795354i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00066795354i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00066795354i[CPU0 ] CPUID[0x80000005]: 01ff01ff 01ff01ff 40020140 40020140
+00066795354i[CPU0 ] CPUID[0x80000006]: 00000000 42004200 02008140 00000000
+00066795354i[CPU0 ] CPUID[0x80000007]: 00000000 00000000 00000000 00000000
+00066795354i[CPU0 ] CPUID[0x80000008]: 00003028 00000000 00000000 00000000
+00066795354i[     ] reset of 'pci' plugin device by virtual method
+00066795354i[     ] reset of 'pci2isa' plugin device by virtual method
+00066795354i[     ] reset of 'cmos' plugin device by virtual method
+00066795354i[     ] reset of 'dma' plugin device by virtual method
+00066795354i[     ] reset of 'pic' plugin device by virtual method
+00066795354i[     ] reset of 'pit' plugin device by virtual method
+00066795354i[     ] reset of 'floppy' plugin device by virtual method
+00066795354i[     ] reset of 'vga' plugin device by virtual method
+00066795354i[     ] reset of 'acpi' plugin device by virtual method
+00066795354i[     ] reset of 'ioapic' plugin device by virtual method
+00066795354i[     ] reset of 'keyboard' plugin device by virtual method
+00066795354i[     ] reset of 'harddrv' plugin device by virtual method
+00066795354i[     ] reset of 'pci_ide' plugin device by virtual method
+00066795354i[     ] reset of 'unmapped' plugin device by virtual method
+00066795354i[     ] reset of 'biosdev' plugin device by virtual method
+00066795354i[     ] reset of 'speaker' plugin device by virtual method
+00066795354i[     ] reset of 'extfpuirq' plugin device by virtual method
+00066795354i[     ] reset of 'parallel' plugin device by virtual method
+00066795354i[     ] reset of 'serial' plugin device by virtual method
+00066795354i[     ] reset of 'gameport' plugin device by virtual method
+00066795354i[     ] reset of 'usb_uhci' plugin device by virtual method
+00066800010i[BIOS ] $Revision: 11545 $ $Date: 2012-11-11 09:11:17 +0100 (So, 11. Nov 2012) $
+00067114062i[KBD  ] reset-disable command received
+00067116698i[BIOS ] Starting rombios32
+00067117139i[BIOS ] Shutdown flag 0
+00067117710i[BIOS ] ram_size=0x02000000
+00067118173i[BIOS ] ram_end=32MB
+00068047338i[BIOS ] Found 1 cpu(s)
+00068061357i[BIOS ] bios_table_addr: 0x000fa448 end=0x000fcc00
+00068389002i[PCI  ] i440FX PMC write to PAM register 59 (TLB Flush)
+00068717319i[P2I  ] PCI IRQ routing: PIRQA# set to 0x0b
+00068717344i[P2I  ] PCI IRQ routing: PIRQB# set to 0x09
+00068717344i[P2I  ] PCI IRQ routing: PIRQC# set to 0x0b
+00068717344i[P2I  ] PCI IRQ routing: PIRQD# set to 0x09
+00068717344i[P2I  ] write: ELCR2 = 0x0a
+00068718009i[BIOS ] PIIX3/PIIX4 init: elcr=00 0a
+00068725468i[BIOS ] PCI: bus=0 devfn=0x00: vendor_id=0x8086 device_id=0x1237 class=0x0600
+00068728001i[BIOS ] PCI: bus=0 devfn=0x08: vendor_id=0x8086 device_id=0x7000 class=0x0601
+00068730002i[BIOS ] PCI: bus=0 devfn=0x09: vendor_id=0x8086 device_id=0x7010 class=0x0101
+00068731004i[BIOS ] region 4: 0x0000c000
+00068733000i[BIOS ] PCI: bus=0 devfn=0x0a: vendor_id=0x8086 device_id=0x7020 class=0x0c03
+00068733810i[BIOS ] region 4: 0x0000c020
+00068734015i[UHCI ] new irq line = 9
+00068735527i[BIOS ] PCI: bus=0 devfn=0x0b: vendor_id=0x8086 device_id=0x7113 class=0x0680
+00068736004i[ACPI ] new irq line = 11
+00068736184i[ACPI ] new irq line = 9
+00068736237i[PCI  ] setting SMRAM control register to 0x4a
+00068900355i[CPU0 ] Enter to System Management Mode
+00068900355i[CPU0 ] enter_system_management_mode: temporary disable VMX while in SMM mode
+00068900359i[CPU0 ] RSM: Resuming from System Management Mode
+00069064378i[PCI  ] setting SMRAM control register to 0x0a
+00069079003i[BIOS ] MP table addr=0x000fa520 MPC table addr=0x000fa450 size=0xc8
+00069081005i[BIOS ] SMBIOS table addr=0x000fa530
+00069083002i[BIOS ] ACPI tables: RSDP addr=0x000fa650 ACPI DATA addr=0x01ff0000 size=0xf72
+00069086266i[BIOS ] Firmware waking vector 0x1ff00cc
+00069088244i[PCI  ] i440FX PMC write to PAM register 59 (TLB Flush)
+00069088798i[BIOS ] bios_table_cur_addr: 0x000fa674
+00069216602i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00069216672i[BXVGA] VBE known Display Interface b0c0
+00069216704i[BXVGA] VBE known Display Interface b0c5
+00069219630i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00081714477i[BIOS ] Booting from 0000:7c00
+00085339281e[CPU0 ] write_virtual_qword_64(): canonical failure
+00085339296e[CPU0 ] fetch_raw_descriptor: GDT: index (65f) cb > limit (48)
+00085339300e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339304e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339308e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339312e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339316e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339320e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339324e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339328e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339332e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339336e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339340e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339344e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339348e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339352e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339356e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339360e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339364e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339368e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339372e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339376e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339380e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339384e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339388e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339392e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339396e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339400e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339404e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339408e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339412e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339416e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339420e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339424e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339428e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339432e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339436e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339440e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339444e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339448e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339452e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339456e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339460e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339464e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339468e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339472e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339476e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339480e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339484e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339488e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339492e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339496e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339500e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339504e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339508e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339512e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339516e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339520e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339524e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339528e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339532e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339536e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339540e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339544e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339548e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339552e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339556e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339560e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339564e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339568e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339572e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339576e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339580e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339584e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339588e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339592e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339596e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339600e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339604e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339608e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339612e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339616e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339620e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339624e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339628e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339632e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339636e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339640e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339644e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339648e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339652e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339656e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339660e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339664e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339668e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339672e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339676e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339680e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339684e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339688e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339692e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339696e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339700e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339704e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339708e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339712e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339716e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339720e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339724e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339728e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339732e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339736e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339740e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339744e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339748e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339752e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339756e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339760e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339764e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339768e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339772e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339776e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339780e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339784e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339788e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339792e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339796e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339800e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339804e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339808e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339812e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339816e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339820e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339824e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339828e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339832e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339836e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339840e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339844e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339848e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339852e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339856e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339860e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339864e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339868e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339872e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339876e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339880e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339884e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339888e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339892e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339896e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339900e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339904e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339908e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339912e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339916e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339920e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339924e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339928e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339932e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339936e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339940e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339944e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339948e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339952e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339956e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339960e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339964e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339968e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339972e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339976e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339980e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339984e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339988e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339992e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085339996e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340000e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340004e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340008e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340012e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340016e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340020e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340024e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340028e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340032e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340036e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340040e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340044e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340048e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340052e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340056e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340060e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340064e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340068e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340072e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340076e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340080e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340084e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340088e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340092e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340096e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340100e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340104e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340108e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340112e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340116e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340120e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340124e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340128e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340132e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340136e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340140e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340144e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340148e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340152e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340156e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340160e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340164e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340168e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340172e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340176e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340180e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340184e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340188e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340192e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340196e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340200e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340204e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340208e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340212e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340216e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340220e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340224e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340228e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340232e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340236e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340240e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340244e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340248e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340252e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340256e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340260e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340264e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340268e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340272e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340276e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340280e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340284e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340288e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340292e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340296e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340300e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340304e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340308e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340312e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340316e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340320e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340324e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340328e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340332e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340336e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340340e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340344e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340348e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340352e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340356e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340360e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340364e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340368e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340372e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340376e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340380e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340384e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340388e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340392e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340396e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340400e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340404e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340408e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340412e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340416e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340420e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340424e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340428e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340432e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340436e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340440e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340444e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340448e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340452e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340456e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340460e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340464e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340468e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340472e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340476e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340480e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340484e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340488e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340492e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340496e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340500e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340504e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340508e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340512e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340516e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340520e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340524e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340528e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340532e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340536e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340540e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340544e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340548e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340552e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340556e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340560e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340564e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340568e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340572e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340577e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340580e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340584e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340588e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340592e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340596e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340600e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340604e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340608e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340612e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340616e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340620e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340624e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340628e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340633e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340637e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00085340640e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340641e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340642e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340643e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340644e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340645e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340646e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340647e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340648e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340649e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340650e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340651e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340652e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340653e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340654e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340655e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340656e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340657e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340658e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340659e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340660e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340661e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340662e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340663e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340664e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340665e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340666e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340667e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340668e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340669e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340670e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340671e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340672e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340673e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340674e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340675e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340676e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340677e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340678e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340679e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340680e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340681e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340682e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340683e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340684e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340685e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340686e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340687e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340688e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340689e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340690e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340691e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340692e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340693e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340694e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340695e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340696e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340697e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340698e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00085340698i[CPU0 ] CPU is in long mode (active)
+00085340698i[CPU0 ] CS.mode = 64 bit
+00085340698i[CPU0 ] SS.mode = 64 bit
+00085340698i[CPU0 ] EFER   = 0x00000500
+00085340698i[CPU0 ] | RAX=74fa3c4444f506e8  RBX=00000000e0000011
+00085340698i[CPU0 ] | RCX=0000000000001200  RDX=0000000000031028
+00085340698i[CPU0 ] | RSP=0000000000003020  RBP=0000000000007abc
+00085340698i[CPU0 ] | RSI=00000000000e0066  RDI=0000000000001000
+00085340698i[CPU0 ] |  R8=0000000000000000   R9=0000000000000000
+00085340698i[CPU0 ] | R10=0000000000000000  R11=0000000000000000
+00085340698i[CPU0 ] | R12=0000000000000000  R13=0000000000000000
+00085340698i[CPU0 ] | R14=0000000000000000  R15=0000000000000000
+00085340698i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00085340698i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00085340698i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 00000000 0 0
+00085340698i[CPU0 ] |  DS:0000( 0000| 0|  0) 00000000 00000000 0 0
+00085340698i[CPU0 ] |  SS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
+00085340698i[CPU0 ] |  ES:0000( 0000| 0|  0) 00000000 00000000 0 0
+00085340698i[CPU0 ] |  FS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
+00085340698i[CPU0 ] |  GS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
+00085340698i[CPU0 ] |  MSR_FS_BASE:0000000000000000
+00085340698i[CPU0 ] |  MSR_GS_BASE:0000000000000000
+00085340698i[CPU0 ] | RIP=0000000000011b12 (0000000000011b12)
+00085340698i[CPU0 ] | CR0=0xe0000011 CR2=0x0000000000002ff8
+00085340698i[CPU0 ] | CR3=0x00001000 CR4=0x000000a0
+00085340698i[CPU0 ] 0x0000000000011b12>> add byte ptr ds:[rax], al : 0000
+00085340698e[CPU0 ] exception(): 3rd (14) exception with no resolution, shutdown status is 00h, resetting
+00085340698i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00085340698i[CPU0 ] cpu hardware reset
+00085340698i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x0000fee00000
+00085340698i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00085340698i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00002028 1fcbfbff
+00085340698i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00085340698i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00085340698i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00085340698i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00085340698i[CPU0 ] CPUID[0x80000000]: 80000008 00000000 00000000 00000000
+00085340698i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000101 2a100000
+00085340698i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00085340698i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00085340698i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00085340698i[CPU0 ] CPUID[0x80000005]: 01ff01ff 01ff01ff 40020140 40020140
+00085340698i[CPU0 ] CPUID[0x80000006]: 00000000 42004200 02008140 00000000
+00085340698i[CPU0 ] CPUID[0x80000007]: 00000000 00000000 00000000 00000000
+00085340698i[CPU0 ] CPUID[0x80000008]: 00003028 00000000 00000000 00000000
+00085340698i[     ] reset of 'pci' plugin device by virtual method
+00085340698i[     ] reset of 'pci2isa' plugin device by virtual method
+00085340698i[     ] reset of 'cmos' plugin device by virtual method
+00085340698i[     ] reset of 'dma' plugin device by virtual method
+00085340698i[     ] reset of 'pic' plugin device by virtual method
+00085340698i[     ] reset of 'pit' plugin device by virtual method
+00085340698i[     ] reset of 'floppy' plugin device by virtual method
+00085340698i[     ] reset of 'vga' plugin device by virtual method
+00085340698i[     ] reset of 'acpi' plugin device by virtual method
+00085340698i[     ] reset of 'ioapic' plugin device by virtual method
+00085340698i[     ] reset of 'keyboard' plugin device by virtual method
+00085340698i[     ] reset of 'harddrv' plugin device by virtual method
+00085340698i[     ] reset of 'pci_ide' plugin device by virtual method
+00085340698i[     ] reset of 'unmapped' plugin device by virtual method
+00085340698i[     ] reset of 'biosdev' plugin device by virtual method
+00085340698i[     ] reset of 'speaker' plugin device by virtual method
+00085340698i[     ] reset of 'extfpuirq' plugin device by virtual method
+00085340698i[     ] reset of 'parallel' plugin device by virtual method
+00085340698i[     ] reset of 'serial' plugin device by virtual method
+00085340698i[     ] reset of 'gameport' plugin device by virtual method
+00085340698i[     ] reset of 'usb_uhci' plugin device by virtual method
+00085345354i[BIOS ] $Revision: 11545 $ $Date: 2012-11-11 09:11:17 +0100 (So, 11. Nov 2012) $
+00085659064i[KBD  ] reset-disable command received
+00085661700i[BIOS ] Starting rombios32
+00085662141i[BIOS ] Shutdown flag 0
+00085662712i[BIOS ] ram_size=0x02000000
+00085663175i[BIOS ] ram_end=32MB
+00086618338i[BIOS ] Found 1 cpu(s)
+00086632357i[BIOS ] bios_table_addr: 0x000fa448 end=0x000fcc00
+00086960002i[PCI  ] i440FX PMC write to PAM register 59 (TLB Flush)
+00087288319i[P2I  ] PCI IRQ routing: PIRQA# set to 0x0b
+00087288344i[P2I  ] PCI IRQ routing: PIRQB# set to 0x09
+00087288344i[P2I  ] PCI IRQ routing: PIRQC# set to 0x0b
+00087288344i[P2I  ] PCI IRQ routing: PIRQD# set to 0x09
+00087288344i[P2I  ] write: ELCR2 = 0x0a
+00087289009i[BIOS ] PIIX3/PIIX4 init: elcr=00 0a
+00087296468i[BIOS ] PCI: bus=0 devfn=0x00: vendor_id=0x8086 device_id=0x1237 class=0x0600
+00087299001i[BIOS ] PCI: bus=0 devfn=0x08: vendor_id=0x8086 device_id=0x7000 class=0x0601
+00087301002i[BIOS ] PCI: bus=0 devfn=0x09: vendor_id=0x8086 device_id=0x7010 class=0x0101
+00087302004i[BIOS ] region 4: 0x0000c000
+00087304000i[BIOS ] PCI: bus=0 devfn=0x0a: vendor_id=0x8086 device_id=0x7020 class=0x0c03
+00087304810i[BIOS ] region 4: 0x0000c020
+00087305015i[UHCI ] new irq line = 9
+00087306527i[BIOS ] PCI: bus=0 devfn=0x0b: vendor_id=0x8086 device_id=0x7113 class=0x0680
+00087307004i[ACPI ] new irq line = 11
+00087307184i[ACPI ] new irq line = 9
+00087307237i[PCI  ] setting SMRAM control register to 0x4a
+00087471355i[CPU0 ] Enter to System Management Mode
+00087471355i[CPU0 ] enter_system_management_mode: temporary disable VMX while in SMM mode
+00087471359i[CPU0 ] RSM: Resuming from System Management Mode
+00087635378i[PCI  ] setting SMRAM control register to 0x0a
+00087650003i[BIOS ] MP table addr=0x000fa520 MPC table addr=0x000fa450 size=0xc8
+00087652005i[BIOS ] SMBIOS table addr=0x000fa530
+00087654002i[BIOS ] ACPI tables: RSDP addr=0x000fa650 ACPI DATA addr=0x01ff0000 size=0xf72
+00087657266i[BIOS ] Firmware waking vector 0x1ff00cc
+00087659244i[PCI  ] i440FX PMC write to PAM register 59 (TLB Flush)
+00087659798i[BIOS ] bios_table_cur_addr: 0x000fa674
+00087787602i[VBIOS] VGABios $Id: vgabios.c,v 1.75 2011/10/15 14:07:21 vruppert Exp $
+00087787672i[BXVGA] VBE known Display Interface b0c0
+00087787704i[BXVGA] VBE known Display Interface b0c5
+00087790630i[VBIOS] VBE Bios $Id: vbe.c,v 1.64 2011/07/19 18:25:05 vruppert Exp $
+00100259817i[BIOS ] Booting from 0000:7c00
+00103884621e[CPU0 ] write_virtual_qword_64(): canonical failure
+00103884636e[CPU0 ] fetch_raw_descriptor: GDT: index (65f) cb > limit (48)
+00103884640e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884644e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884648e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884652e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884656e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884660e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884664e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884668e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884672e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884676e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884680e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884684e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884688e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884692e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884696e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884700e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884704e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884708e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884712e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884716e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884720e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884724e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884728e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884732e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884736e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884740e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884744e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884748e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884752e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884756e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884760e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884764e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884768e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884772e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884776e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884780e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884784e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884788e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884792e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884796e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884800e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884804e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884808e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884812e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884816e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884820e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884824e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884828e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884832e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884836e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884840e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884844e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884848e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884852e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884856e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884860e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884864e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884868e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884872e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884876e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884880e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884884e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884888e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884892e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884896e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884900e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884904e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884908e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884912e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884916e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884920e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884924e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884928e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884932e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884936e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884940e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884944e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884948e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884952e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884956e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884960e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884964e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884968e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884972e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884976e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884980e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884984e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884988e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884992e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103884996e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885000e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885004e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885008e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885012e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885016e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885020e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885024e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885028e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885032e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885036e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885040e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885044e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885048e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885052e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885056e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885060e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885064e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885068e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885072e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885076e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885080e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885084e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885088e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885092e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885096e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885100e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885104e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885108e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885112e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885116e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885120e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885124e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885128e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885132e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885136e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885140e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885144e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885148e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885152e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885156e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885160e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885164e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885168e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885172e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885176e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885180e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885184e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885188e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885192e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885196e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885200e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885204e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885208e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885212e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885216e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885220e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885224e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885228e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885232e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885236e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885240e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885244e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885248e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885252e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885256e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885260e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885264e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885268e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885272e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885276e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885280e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885284e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885288e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885292e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885296e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885300e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885304e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885308e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885312e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885316e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885320e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885324e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885328e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885332e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885336e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885340e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885344e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885348e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885352e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885356e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885360e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885364e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885368e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885372e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885376e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885380e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885384e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885388e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885392e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885396e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885400e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885404e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885408e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885412e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885416e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885420e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885424e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885428e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885432e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885436e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885440e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885444e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885448e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885452e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885456e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885460e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885464e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885468e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885472e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885476e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885480e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885484e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885488e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885492e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885496e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885500e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885504e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885508e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885512e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885516e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885520e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885524e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885528e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885532e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885536e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885540e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885544e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885548e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885552e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885556e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885560e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885564e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885568e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885572e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885576e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885580e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885584e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885588e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885592e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885596e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885600e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885604e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885608e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885612e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885616e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885620e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885624e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885628e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885632e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885636e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885640e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885644e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885648e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885652e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885656e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885660e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885664e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885668e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885672e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885676e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885680e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885684e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885688e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885692e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885696e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885700e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885704e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885708e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885712e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885716e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885720e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885724e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885728e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885732e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885736e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885740e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885744e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885748e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885752e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885756e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885760e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885764e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885768e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885772e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885776e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885780e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885784e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885788e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885792e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885796e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885800e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885804e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885808e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885812e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885816e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885820e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885824e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885828e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885832e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885836e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885840e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885844e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885848e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885852e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885856e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885860e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885864e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885868e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885872e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885876e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885880e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885884e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885888e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885892e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885896e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885900e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885904e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885908e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885912e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885917e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885920e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885924e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885928e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885932e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885936e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885940e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885944e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885948e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885952e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885956e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885960e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885964e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885968e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885973e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885977e[CPU0 ] check_cs(0x1b17): not a valid code segment !
+00103885980e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103885981e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103885982e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103885983e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103885984e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103885985e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103885986e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103885987e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103885988e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103885989e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103885990e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103885991e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103885992e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103885993e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103885994e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103885995e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103885996e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103885997e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103885998e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103885999e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886000e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886001e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886002e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886003e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886004e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886005e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886006e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886007e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886008e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886009e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886010e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886011e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886012e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886013e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886014e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886015e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886016e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886017e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886018e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886019e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886020e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886021e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886022e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886023e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886024e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886025e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886026e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886027e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886028e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886029e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886030e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886031e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886032e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886033e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886034e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886035e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886036e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886037e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886038e[CPU0 ] read_RMW_virtual_byte_64(): canonical failure
+00103886038i[CPU0 ] CPU is in long mode (active)
+00103886038i[CPU0 ] CS.mode = 64 bit
+00103886038i[CPU0 ] SS.mode = 64 bit
+00103886038i[CPU0 ] EFER   = 0x00000500
+00103886038i[CPU0 ] | RAX=74fa3c4444f506e8  RBX=00000000e0000011
+00103886038i[CPU0 ] | RCX=0000000000001200  RDX=0000000000031028
+00103886038i[CPU0 ] | RSP=0000000000003020  RBP=0000000000007abc
+00103886038i[CPU0 ] | RSI=00000000000e0066  RDI=0000000000001000
+00103886038i[CPU0 ] |  R8=0000000000000000   R9=0000000000000000
+00103886038i[CPU0 ] | R10=0000000000000000  R11=0000000000000000
+00103886038i[CPU0 ] | R12=0000000000000000  R13=0000000000000000
+00103886038i[CPU0 ] | R14=0000000000000000  R15=0000000000000000
+00103886038i[CPU0 ] | IOPL=0 id vip vif ac vm RF nt of df if tf sf zf af PF cf
+00103886038i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00103886038i[CPU0 ] |  CS:0008( 0001| 0|  0) 00000000 00000000 0 0
+00103886038i[CPU0 ] |  DS:0000( 0000| 0|  0) 00000000 00000000 0 0
+00103886038i[CPU0 ] |  SS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
+00103886038i[CPU0 ] |  ES:0000( 0000| 0|  0) 00000000 00000000 0 0
+00103886038i[CPU0 ] |  FS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
+00103886038i[CPU0 ] |  GS:0000( 0005| 0|  0) 00000000 0000ffff 0 0
+00103886038i[CPU0 ] |  MSR_FS_BASE:0000000000000000
+00103886038i[CPU0 ] |  MSR_GS_BASE:0000000000000000
+00103886038i[CPU0 ] | RIP=0000000000011b12 (0000000000011b12)
+00103886038i[CPU0 ] | CR0=0xe0000011 CR2=0x0000000000002ff8
+00103886038i[CPU0 ] | CR3=0x00001000 CR4=0x000000a0
+00103886038i[CPU0 ] 0x0000000000011b12>> add byte ptr ds:[rax], al : 0000
+00103886038e[CPU0 ] exception(): 3rd (14) exception with no resolution, shutdown status is 00h, resetting
+00103886038i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00103886038i[CPU0 ] cpu hardware reset
+00103886038i[APIC0] allocate APIC id=0 (MMIO enabled) to 0x0000fee00000
+00103886038i[CPU0 ] CPUID[0x00000000]: 00000005 756e6547 6c65746e 49656e69
+00103886038i[CPU0 ] CPUID[0x00000001]: 00000633 00010800 00002028 1fcbfbff
+00103886038i[CPU0 ] CPUID[0x00000002]: 00410601 00000000 00000000 00000000
+00103886038i[CPU0 ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00103886038i[CPU0 ] CPUID[0x00000004]: 00000000 00000000 00000000 00000000
+00103886038i[CPU0 ] CPUID[0x00000005]: 00000040 00000040 00000003 00000020
+00103886038i[CPU0 ] CPUID[0x80000000]: 80000008 00000000 00000000 00000000
+00103886038i[CPU0 ] CPUID[0x80000001]: 00000000 00000000 00000101 2a100000
+00103886038i[CPU0 ] CPUID[0x80000002]: 20202020 20202020 20202020 6e492020
+00103886038i[CPU0 ] CPUID[0x80000003]: 286c6574 50202952 69746e65 52286d75
+00103886038i[CPU0 ] CPUID[0x80000004]: 20342029 20555043 20202020 00202020
+00103886038i[CPU0 ] CPUID[0x80000005]: 01ff01ff 01ff01ff 40020140 40020140
+00103886038i[CPU0 ] CPUID[0x80000006]: 00000000 42004200 02008140 00000000
+00103886038i[CPU0 ] CPUID[0x80000007]: 00000000 00000000 00000000 00000000
+00103886038i[CPU0 ] CPUID[0x80000008]: 00003028 00000000 00000000 00000000
+00103886038i[     ] reset of 'pci' plugin device by virtual method
+00103886038i[     ] reset of 'pci2isa' plugin device by virtual method
+00103886038i[     ] reset of 'cmos' plugin device by virtual method
+00103886038i[     ] reset of 'dma' plugin device by virtual method
+00103886038i[     ] reset of 'pic' plugin device by virtual method
+00103886038i[     ] reset of 'pit' plugin device by virtual method
+00103886038i[     ] reset of 'floppy' plugin device by virtual method
+00103886038i[     ] reset of 'vga' plugin device by virtual method
+00103886038i[     ] reset of 'acpi' plugin device by virtual method
+00103886038i[     ] reset of 'ioapic' plugin device by virtual method
+00103886038i[     ] reset of 'keyboard' plugin device by virtual method
+00103886038i[     ] reset of 'harddrv' plugin device by virtual method
+00103886038i[     ] reset of 'pci_ide' plugin device by virtual method
+00103886038i[     ] reset of 'unmapped' plugin device by virtual method
+00103886038i[     ] reset of 'biosdev' plugin device by virtual method
+00103886038i[     ] reset of 'speaker' plugin device by virtual method
+00103886038i[     ] reset of 'extfpuirq' plugin device by virtual method
+00103886038i[     ] reset of 'parallel' plugin device by virtual method
+00103886038i[     ] reset of 'serial' plugin device by virtual method
+00103886038i[     ] reset of 'gameport' plugin device by virtual method
+00103886038i[     ] reset of 'usb_uhci' plugin device by virtual method
+00103890694i[BIOS ] $Revision: 11545 $ $Date: 2012-11-11 09:11:17 +0100 (So, 11. Nov 2012) $
+00104204062i[KBD  ] reset-disable command received
+00104206698i[BIOS ] Starting rombios32
+00104207139i[BIOS ] Shutdown flag 0
+00104207710i[BIOS ] ram_size=0x02000000
+00104208173i[BIOS ] ram_end=32MB
+00105004000p[WGUI ] >>PANIC<< POWER button turned off.
+00105004000i[CPU0 ] CPU is in protected mode (active)
+00105004000i[CPU0 ] CS.mode = 32 bit
+00105004000i[CPU0 ] SS.mode = 32 bit
+00105004000i[CPU0 ] EFER   = 0x00000000
+00105004000i[CPU0 ] | EAX=00000000  EBX=00000000  ECX=0000002a  EDX=00000061
+00105004000i[CPU0 ] | ESP=0009fb80  EBP=00000000  ESI=00000002  EDI=0000070c
+00105004000i[CPU0 ] | IOPL=0 id vip vif ac vm rf nt of df if tf sf ZF af PF cf
+00105004000i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00105004000i[CPU0 ] |  CS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00105004000i[CPU0 ] |  DS:0018( 0003| 0|  0) 00000000 ffffffff 1 1
+00105004000i[CPU0 ] |  SS:0018( 0003| 0|  0) 00000000 ffffffff 1 1
+00105004000i[CPU0 ] |  ES:0018( 0003| 0|  0) 00000000 ffffffff 1 1
+00105004000i[CPU0 ] |  FS:0000( 0000| 0|  0) 00000000 00000000 0 0
+00105004000i[CPU0 ] |  GS:0000( 0000| 0|  0) 00000000 00000000 0 0
+00105004000i[CPU0 ] | EIP=000e17cd (000e17cd)
+00105004000i[CPU0 ] | CR0=0x60000011 CR2=0x00000000
+00105004000i[CPU0 ] | CR3=0x00000000 CR4=0x00000000
+00105004000i[CPU0 ] 0x00000000000e17cd>> test ecx, ecx : 85C9
+00105004000i[CMOS ] Last time is 1398985666 (Thu May 01 16:07:46 2014)
+00105004000i[     ] restoring default signal behavior
+00105004000i[CTRL ] quit_sim called with exit code 1

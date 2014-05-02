@@ -1,0 +1,48 @@
+﻿Build started 2014-05-01 오후 8:15:40.
+     1>Project "C:\Users\gpmin_000\Desktop\MikaOS\BootLoader\BootLoader.vcxproj" on node 2 (Build target(s)).
+     1>Build:
+         build.bat
+         nasm BootLoader.s -f win64 -o ./obj/BootLoader.o	
+         nasm -f elf64 AsmEntry.s -o ./obj/AsmEntry.o
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c liballoc_1_1.c -o ./obj/liballoc_1_1.o
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c string.c -o ./obj/string.o
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c Entry.cpp -o ./obj/Entry.o
+         Entry.cpp: In function 'void start()':
+         Entry.cpp:172:41: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+           LoadPE("Kernel.dll", kernelDLL, &kernel);
+                                                  ^
+         Entry.cpp:174:17: warning: variable 'EntryAddress' set but not used [-Wunused-but-set-variable]
+           register char* EntryAddress __asm("%rax");
+                          ^
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c CPaging.cpp -o ./obj/CPaging.o
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c ISR.cpp -o ./obj/ISR.o
+         ISR.cpp:4:22: warning: 'm_AsciiCode' defined but not used [-Wunused-variable]
+          static unsigned char m_AsciiCode[5][128] = {
+                               ^
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c GDT.cpp -o ./obj/GDT.o
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c fat16.cpp -o ./obj/fat16.o
+         fat16.cpp: In function 'unsigned int FsSeek(void*, unsigned int)':
+         fat16.cpp:155:6: warning: unused variable 'sector' [-Wunused-variable]
+           int sector = pt_block->bytesread % BYTES_PER_SECTOR;
+               ^
+         fat16.cpp:156:1: warning: no return statement in function returning non-void [-Wreturn-type]
+          }
+          ^
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c fdddrv.cpp -o ./obj/fdddrv.o
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c vbe.cpp -o ./obj/vbe.o
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c Loader.cpp -o ./obj/Loader.o
+         Loader.cpp: In function 'bool LoadPE(char*, char*, SPEFile*)':
+         Loader.cpp:43:10: warning: unused variable 'handle' [-Wunused-variable]
+            SFile* handle = (SFile*)fp;
+                   ^
+         Loader.cpp:82:29: warning: unused variable 'HintNameTable' [-Wunused-variable]
+              SPEImportHintNameTable* HintNameTable = (SPEImportHintNameTable*)(address + HintNameRVA);
+                                      ^
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c CDisplayDriver.cpp -o ./obj/CDisplayDriver.o
+         ld -T linkerscript.link -o ./obj/BootLoader.dll ./obj/BootLoader.o ./obj/AsmEntry.o ./obj/liballoc_1_1.o ./obj/string.o ./obj/Entry.o ./obj/CPaging.o ./obj/ISR.o ./obj/GDT.o ./obj/fat16.o ./obj/fdddrv.o ./obj/vbe.o ./obj/Loader.o ./obj/CDisplayDriver.o
+         objcopy -O binary ./obj/BootLoader.dll ../out/BOOTLDR2.bin
+     1>Done Building Project "C:\Users\gpmin_000\Desktop\MikaOS\BootLoader\BootLoader.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.53

@@ -1,0 +1,38 @@
+﻿Build started 2014-05-01 오후 9:30:50.
+     1>Project "C:\Users\gpmin_000\Desktop\MikaOS\Kernel\Kernel.vcxproj" on node 2 (Build target(s)).
+     1>Build:
+         build.bat
+         nasm -f elf64 AsmKernel.s -o ./obj/AsmKernel.o
+         nasm -f elf64 Asm16.s -o ./obj/Asm16.o
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c liballoc_1_1.c -o ./obj/liballoc_1_1.o
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c string.c -o ./obj/string.o
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c main.cpp -o ./obj/main.o
+         main.cpp: In function 'void newTask(void*)':
+         main.cpp:154:23: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+           Execute("Kernel2.dll");
+                                ^
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c task.cpp -o ./obj/task.o
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c CPaging.cpp -o ./obj/CPaging.o
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c CDisplayDriver.cpp -o ./obj/CDisplayDriver.o
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c ISR.cpp -o ./obj/ISR.o
+         ISR.cpp:4:22: warning: 'm_AsciiCode' defined but not used [-Wunused-variable]
+          static unsigned char m_AsciiCode[5][128] = {
+                               ^
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c GDT.cpp -o ./obj/GDT.o
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c Loader.cpp -o ./obj/Loader.o
+         Loader.cpp: In function 'bool Execute(char*)':
+         Loader.cpp:26:1: warning: no return statement in function returning non-void [-Wreturn-type]
+          }
+          ^
+         Loader.cpp: In function 'bool LoadPE(char*, char*, SPEFile*)':
+         Loader.cpp:104:29: warning: unused variable 'HintNameTable' [-Wunused-variable]
+              SPEImportHintNameTable* HintNameTable = (SPEImportHintNameTable*)(address + HintNameRVA);
+                                      ^
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c fat16.cpp -o ./obj/fat16.o
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -c fdddrv.cpp -o ./obj/fdddrv.o
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -std=c++11 -shared -o ../out/Kernel.dll ./obj/AsmKernel.o ./obj/Asm16.o ./obj/liballoc_1_1.o ./obj/string.o ./obj/main.o ./obj/task.o ./obj/CPaging.o ./obj/CDisplayDriver.o ./obj/ISR.o ./obj/GDT.o ./obj/Loader.o ./obj/fat16.o ./obj/fdddrv.o -estart -Wl,--image-base,0x20000
+     1>Done Building Project "C:\Users\gpmin_000\Desktop\MikaOS\Kernel\Kernel.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.63

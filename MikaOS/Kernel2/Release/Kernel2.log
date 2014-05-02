@@ -1,0 +1,12 @@
+﻿Build started 2014-05-01 오후 9:19:15.
+     1>Project "C:\Users\gpmin_000\Desktop\MikaOS\Kernel2\Kernel2.vcxproj" on node 2 (Build target(s)).
+     1>Build:
+         build.bat
+         g++ -Wall -fno-builtin -nostdlib -ffreestanding -nostdinc -fno-rtti -m64 -c Source.cpp -o ./obj/Source.o
+         ld -T linkerscript.link -o ../out/Kernel2.dll ./obj/Source.o ../out/Kernel.dll -estart --image-base 0x20000
+         Press any key to continue . . . 
+     1>Done Building Project "C:\Users\gpmin_000\Desktop\MikaOS\Kernel2\Kernel2.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.12
